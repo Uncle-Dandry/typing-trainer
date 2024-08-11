@@ -1,0 +1,35 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #FFFFFF;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  color: inherit;
+  border: none;
+  background: transparent;
+  transition: opacity 0.3s;
+}

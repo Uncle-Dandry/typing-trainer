@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "target": "es6",
+    "target": "es5",
     "lib": [
       "DOM",
+      "dom.iterable",
       "ESNext",
     ],
     "jsx": "react-jsx",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "types": [
       "@types/react",
       "@types/react-dom",
+      "node",
       "react",
       "react-dom"
     ],
@@ -21,5 +23,6 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*", "**/*.ts"]
 }
