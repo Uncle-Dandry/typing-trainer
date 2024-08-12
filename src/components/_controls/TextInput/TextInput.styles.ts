@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => ({
     maxWidth: 1000,
     width: '100%',
     margin: '40px auto',
-    padding: '15px',
+    padding: '10px',
     backgroundColor: '#232323',
 
     [theme.breakpoints.down('sm')]: {
