@@ -15,8 +15,8 @@ import { calculateWPM } from 'utils';
 import useStyles from './TextInput.styles';
 
 // TODO: mb replace with api in the future
-// const text = 'The quick brown fox jumps over the lazy dog. This sentence is often used to test typing skills because it contains every letter of the alphabet at least once. Typing practice helps improve speed and accuracy over time. To become proficient at typing, it\'s important to focus on maintaining a steady rhythm and minimizing errors. Consistent practice is key to developing muscle memory and increasing typing efficiency. Remember to keep your hands relaxed and use the correct finger placement on the keyboard. With time, you’ll find yourself typing faster and more accurately without even thinking about it.';
-const text = 'The quick brown fox jumps over the lazy dog.';
+const text = 'The quick brown fox jumps over the lazy dog. This sentence is often used to test typing skills because it contains every letter of the alphabet at least once. Typing practice helps improve speed and accuracy over time. To become proficient at typing, it\'s important to focus on maintaining a steady rhythm and minimizing errors. Consistent practice is key to developing muscle memory and increasing typing efficiency. Remember to keep your hands relaxed and use the correct finger placement on the keyboard. With time, you’ll find yourself typing faster and more accurately without even thinking about it.';
+// const text = 'The quick brown fox jumps over the lazy dog.';
 
 const TextInput: FC = () => {
   const { classes } = useStyles();
