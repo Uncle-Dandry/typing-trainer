@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "repository": "https://github.com/Uncle-Dandry/typing-trainer.git",
   "author": "Uncle Dandry",
+  "homepage": "https://uncle-dandry.github.io/typing-trainer",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
