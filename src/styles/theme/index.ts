@@ -39,8 +39,8 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          color: palette.common.black,
           fontFamily: 'Montserrat, sans-serif',
+          color: palette.common.black,
           isolation: 'isolate',
           backgroundColor: palette.common.white,
           backgroundSize: '100%',

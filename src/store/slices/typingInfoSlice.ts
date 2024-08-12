@@ -1,14 +1,17 @@
 import { type StateCreator } from 'zustand';
+import 'zustand/middleware';
 
 import type { StoreState } from '../types';
 
 interface TypingInfoState {
-  errorCounter: number;
+  isFinished: boolean;
+  mistakeCounter: number;
   wpmCounter: number;
+  userInput: string;
 }
 
 interface TypingInfoActions {
-  update: (newTypingInfo: TypingInfoState) => void;
+  update: (newTypingInfo: Partial<TypingInfoState>) => void;
   reset: () => void;
 }
 
@@ -17,24 +20,26 @@ export interface TypingInfoSlice {
 }
 
 const initialTypingInfo: TypingInfoState = {
-  errorCounter: 0,
+  isFinished: false,
+  mistakeCounter: 0,
   wpmCounter: 0,
+  userInput: '',
 };
 
 const createTypingInfoSlice: StateCreator<
   StoreState,
-  [],
+  [["zustand/devtools", never]],
   [],
   TypingInfoSlice
 > = (set) => ({
   typingInfo: {
     ...initialTypingInfo,
-    update: (payload: TypingInfoState) => set(
+    update: (payload: Partial<TypingInfoState>) => set(
       (state) => ({
         ...state,
         typingInfo: {
           ...state.typingInfo,
-          payload,
+          ...payload,
         },
       }),
     ),
